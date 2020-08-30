@@ -1,6 +1,6 @@
 # screen_pick_up
 
-Pick up text is screen monitor
+Pick up text in screen monitor
 
 Library
 1) OpenCV
