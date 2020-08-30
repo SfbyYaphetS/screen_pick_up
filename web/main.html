@@ -1,0 +1,28 @@
+<head>
+    <meta charset="utf-8">
+    <title>Просто забираем текст!</title>
+    <script type="text/javascript" src="eel.js"></script>
+    <meta http-equiv="Content-Language" content="English" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="main_style.css" media="screen" />
+</head>
+<body>
+    <div> 
+        <h1>Забираем текст!</h1>
+        <button id="show" class="button_sber">Указать координаты</button>
+        <p>
+        <textarea id="text_res" rows="10" cols="45" name="text">...</textarea>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        async function js_function() {
+            let place = null;
+            let res = await eel.position(place)();
+            document.getElementById('text_res').innerHTML = res;
+        }
+        jQuery('#show').on('click', function() {
+            js_function();
+        })
+    </script>
+</body>
