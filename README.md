@@ -1,12 +1,12 @@
 # screen_pick_up
 
-Pick up text in screen monitor
+Pick up text in screen desctop
 
 Library
 1) OpenCV
 2) Tesseract
 3) PyAutoGui
-4) eel
+4) Eel
 
 
 Additionally:
